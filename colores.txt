@@ -1,0 +1,17 @@
+Primary
+#0d47a1
+    P — Light
+   #5472d3
+    P — Dark
+    #002171
+    
+Secondary
+#e2f1fc
+    S — Light
+    #ffffff
+    S — Dark
+    #b0bec9
+Text on P
+#ffffff
+Text on S
+#000000
