@@ -10,10 +10,10 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/main.js"></script>
+        
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -24,10 +24,10 @@
         <div id="container">
             <nav>
                 <ul>
-                    <li><a href="#sobremi"><input href="#sobremi" type="button" value='SOBREMI'></a></li>
-                    <li><a href="#experiencia"><input type="button" value='TRABAJOS'></a></li>
-                    <li><a href="#conocimientos" ><input type="button" value='SKILLS'></a></li>
-                    <li><a href="#contacto"><input type="button" value='CONTACTO'></a></li>
+                    <li><a href="#sobremi"><input id="botonSM" href="#sobremi" type="button" value='SOBREMI'></a></li>
+                    <li><a href="#experiencia"><input id='botonExp' type="button" value='TRABAJOS'></a></li>
+                    <li><a href="#conocimientos" ><input id="botonCon" type="button" value='SKILLS'></a></li>
+                    <li><a href="#contacto"><input id="botonCont" type="button" value='CONTACTO'></a></li>
                 </ul>
             </nav>
             <main>
@@ -36,18 +36,7 @@
                     <div>
 
                         <div id='nombre'>
-                            <ul>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                                <li>asdasdagsdasd</li>
-                            </ul>
+                            <img src="img/minombre.png" alt="">
                         </div>
                         <div id='his'>
                             <header><h3>Sobre mi</h3></header>
@@ -55,14 +44,11 @@
                                 <img src="img/yo.png" alt="">
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tenetur quod enim ea praesentium error autem neque rem vero vel veritatis hic dolore obcaecati iusto quasi impedit minima eius, reiciendis!</p>
+                                <p>Apasionado de la informatica. Creo que la programación abre todo un mundo de posibilidades y espero llegar a trabajar algun dia en una empresa internacional. Me gusta el trabajo en equipo. Sobra gente que no sabe enseñar</p>
+                                <h3>Titulos</h3>
                                 <ul>
-                                    <li></li>
                                     <li>Tecnico sistemas microinformaticos y redes</li>
                                     <li>Tecnico superior Desarrollo aplicaciones web</li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
                                 </ul>
                                 
                                 
@@ -76,7 +62,21 @@
                         <div id="programacion">
                             <header><h3>Programacion</h3></header>
                             <div>
-                                
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>8</div>
+                                <div>9</div>
+                                <div>10</div>
+                                <div>11</div>
+                                <div>12</div>
+                                <div>13</div>
+                                <div>14</div>
+                                <div>15</div>
                             </div>
                         </div>
                     </div>
@@ -85,10 +85,21 @@
                     <header><h3>Conocimientos</h3></header>
                     <div>
                         <div id='conprog'>
-                            <header><h3>Programacion</h3></header>
+                            <header><h3>FrontEnd</h3></header>
+                            <div>
+                                <a href=""><img src="img/lenguajes/html.png" alt=""></a>
+                                <a href=""><img src="img/lenguajes/css.png" alt=""></a>
+                                <a href=""><img src="img/lenguajes/js.png" alt=""></a>
+                                <a href=""><img src="img/lenguajes/jquery.png" alt=""></a>
+                            </div>
                         </div>
                         <div id='consys'>
-                            <header><h3>Sistemas</h3></header>
+                            <header><h3>BackEnd</h3></header>
+                            <div>
+                                <a href=""><img src="img/lenguajes/php.png" alt=""></a>
+                                <a href=""><img src="img/lenguajes/symfony.png" alt=""></a>
+                                <a href=""><img src="img/lenguajes/mysql.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -104,19 +115,21 @@
                                 <input type="text" name="asunto">
                                 <label for="cuerpo">Cuerpo del mensaje:</label>
                                 <textarea name="cuerpo" id="" cols="40" rows="10"></textarea>
+                                <input type="button" value="Borrar" class="botones"><input type="Submit" value="Enviar" class="botones">
                             </form>
                         </div>
                         <div id='redes'>
                             <header><h3>Redes</h3></header>
                             <div>
-                                <a href="#"><img src="img/redes/linkedin.svg" alt="LinkedIn"></a>
-                                <a href="#"><img src="img/redes/twitter.svg" alt="Twitter"></a>
-                                <a href="#"><img src="img/redes/github.svg" alt="Github"></a>
+                                <a href="#"><img class="img_redes" src="img/redes/linkedin.svg" alt="LinkedIn"></a>
+                                <a href="#"><img class="img_redes" src="img/redes/twitter.svg" alt="Twitter"></a>
+                                <a href="#"><img class="img_redes" src="img/redes/github.svg" alt="Github"></a>
                             </div>
                         </div>
                     </div>
                 </article>
             </main>
+            <input type="button" id="boton" value="->">
         </div>
         <footer>
             
@@ -124,7 +137,7 @@
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>

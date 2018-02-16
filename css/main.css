@@ -99,6 +99,9 @@ textarea {
 html { 
     overflow:hidden;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 body>header{
     display: none;
     width: 100%;
@@ -107,11 +110,7 @@ body>header{
     position: fixed;
     top: 0;
 }
-#container{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-}
+
 nav{  
     position: fixed;
     left: 0;
@@ -143,31 +142,86 @@ nav>ul>li input{
     height: 100%;
     border: none;
     border-top: 3px solid #0d47a1;
-    /*padding: 12.3vh 0;/*5.3vw;*/
+    transition: .25s;
 }
 nav>ul>li input:hover{
     background: #5472d3;
+
 }
 nav>ul>li input:focus{
 
     background: #002171;
 }
 
-img{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
 main>article{
     margin-top: 0;
     height: 100vh;
     width: 100vw;
     padding: 0 0 10px 0px;
+    
+}
+main>article>div>div{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+/* SOBREMI*/
 #sobremi{
     background: #5472d3;
 }
+#sobremi>header{
+    text-align: center;
+    background:  #002171;
+    padding: 10px 0;
+    margin:0;
+    color:white;
+    font-size: 1.5em;
+}
+#sobremi>header>h1{
+    margin: 0;
+}
+#sobremi>div{
+    display: grid;
+    grid-template-columns: 85%;
+    justify-content: space-around;
+}
+#sobremi>div>#nombre{
+    margin-top: 20px;
+    height: 70vh;
+    text-align: center;
+    box-shadow: none;
+}
+#nombre>img{
+    height: 70vh;
+    margin: 0 auto;
+}
+#sobremi>div>#his{
+    display:none;
+    background: white;
+    margin-top: 20px;
+    height: 70vh;
+}
+#his>header{
+    text-align: center;
+    width:100%;
+    background: #0d47a1;
+    color:white;
+    padding: 10px 0;
+}
+#his>header>h3{
+    margin: 0;
+}
+#his>div{
+    text-align: center;
+}
+#his>div>img{
+    margin: 25px  0 auto;
+    width: 30vw;
+    height: 33vw;
+    border-radius: 50%;
+}
+
+
+
 /*PESTAÑA TRABAJOS*/
 #experiencia{
     background: #5472d3;
@@ -204,8 +258,23 @@ main>article{
 #experiencia>div header>h3{
     margin: 0;
 }
-#experiencia>div>#hardware{
-    display: none;
+#programacion>div{
+    height: 65.5vh;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+    grid-template-rows: repeat(5,15%);
+}
+#programacion>div>div{
+    padding: 10px;
+}
+#programacion>div>div:nth-child(even) {
+    background: #ddd
+}
+#programacion>div>div:nth-child(odd) {
+ background: #fff
 }
 
 /*PESTAÑA CONOCIEMIENTO*/
@@ -247,6 +316,24 @@ main>article{
 #conocimientos>div>#consys{
     display: none;
 }
+#conocimientos img{
+    width: 30vw;
+    height: 33vw;
+}
+#consys>div{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    
+    justify-content: space-around;
+    align-content: space-around;
+}
+#conprog>div{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    
+    justify-content: space-around;
+    align-content: space-around;
+}
 /*PESTAÑA CONTACTO*/
 #contacto{
     background: #5472d3;
@@ -286,9 +373,53 @@ main>article{
 #contacto>div>#redes{
     display: none;
 }
+#redes>div{
+    display: grid;
+    grid-template-columns: 20vw;
+    justify-content: space-around;
+    align-content: space-around;
+    grid-row-gap: 3vh;
+    align-content: space-around;
+
+}
+#redes>div img{
+    width: 20vw;
+    height: 20vw;
+}
+#formulario>form>input{
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+    height: 5vh;
+}
+#formulario>form{
+    margin-top: 2.5vh;
+}
+#formulario>form>textarea{
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+    height: 20vh;
+}
+#formulario{
+    text-align: center;
+}
+.botones{
+    margin-top: 20px;
+    display: inline;
+    width: 30%;
+}
+#boton{
+    position: fixed;
+    top:80vh;
+    left: 85vw;
+    background: #0D47A1;
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    border: 0px;
+}
 /*
-
-
 
 
 AQUI LA VERSION PC O TABLET
@@ -298,17 +429,7 @@ AQUI LA VERSION PC O TABLET
 
 */
 @media screen and (min-width:1024px){
-html { 
-    overflow:hidden;
-}
-body>header{
-    display: none;
-    width: 100%;
-    background: rgba(255,255,255,0.6);
-    text-align: center;
-    position: fixed;
-    top: 0;
-}
+
 #container{
     width: 100vw;
     height: 100vh;
@@ -352,11 +473,6 @@ nav>ul>li input:focus{
 
     background: #002171;
 }
-img{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
 main>article{
     margin-top: 0;
     height: 100vh;
@@ -389,6 +505,7 @@ main>article{
     height: 75vh;
 }
 #sobremi>div>#his{
+    display: block;
     background: white;
     margin-top: 20px;
     height: 75vh;
@@ -452,7 +569,13 @@ main>article{
 #experiencia>div>#hardware{
     display: block;
 }
+#programacion>div{
+    display: grid;
+    grid-template-columns: repeat(5,14%);
+    justify-content: space-around;
+    align-content: space-between
 
+}
 /**/
 #conocimientos{
     background: #5472d3;
@@ -534,8 +657,13 @@ main>article{
 #redes>img{
     width: 30vw;
     height: 33vh;
+    width: 12vw;
 }
 #formulario>form>input{
+    display: block;
+    margin: 0 auto;
+}
+#formulario>form>textarea{
     display: block;
     margin: 0 auto;
 }
