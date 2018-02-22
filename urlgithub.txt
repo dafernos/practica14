@@ -1,0 +1,7 @@
+https://dafernos.github.io/practica14/
+
+hay veces que al hacer el cambio de escritorio a movil/tablet o al reves el boton crashea, solo hay que actualizar la pagina.
+
+(al final no he metido el porcentaje de habilidad de cada lenguaje ya que no creo que poner un porcentaje ayudase,
+ si fuese bajo seria malo y si fuese alto puede que no reflejase la realidad, con lo cual he dedicido no incluirlo
+retoque los svg y les di color y en los proyectos añadi una imafen neutral que encaja con la tematica de la pagina a mi parecer)
