@@ -15,7 +15,6 @@ $(document).ready(function($) {
             $(this).removeClass('botoni').addClass('botond');
         }
         $('#redes').toggle('fade');
-        console.log($(window).width());
     });
     $('#botonExp').on('click',function(){
     	$('#boton').hide();
